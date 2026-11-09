@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p.06</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #5500ff;
+            --secondary: #00ff00;
+            --tertiary: #ff0000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Momo Trust Display", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            font-size: 2rem;
+        }
+
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .lunes {
+            width: 50%;
+            height: 50%;
+            background-color: var(--primary);
+            display: flex;
+            align-items: flex-end;
+            padding: 10px;
+        }
+
+        .martes {
+            width: 50%;
+            height: 50%;
+            background-color: var(--secondary);
+            padding: 10px;
+        }
+
+        .hoy-manaña {
+            width: 100%;
+            height: 50%;
+            background-color: var(--tertiary);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+    
+
+        @media (max-width: 500px) {
+            .container {
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+
+            .lunes,
+            .martes,
+            .hoy-manaña {
+                width: 100%;
+                height: 33%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="lunes">Lunes</div>
+        <div class="martes">Martes</div>
+        <div class="hoy-manaña">
+            <p>Hoy</p>
+            <p><a href="https://www.figma.com/design/we5VL4WKKZmAtqx1kYwUeR/Untitled?node-id=9-2&amp;t=jcUBfuPl6D7Fcrx7-1">figma</a></p>
+        </div>
+    </section>
+
+</body>
+</html>
